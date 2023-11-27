@@ -1,0 +1,255 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Montserrat:wght@400;500;700&family=Roboto:wght@700;900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+}
+
+nav {
+  background-color: rgb(28, 154, 244);
+  position: fixed;
+  z-index: 50;
+  width: fit-content;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+header h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  color: rgb(39, 106, 231);
+  text-shadow: 2px 5px 8px rgba(44, 6, 111, 0.63);
+}
+
+.text {
+  padding: 2rem 0;
+  line-height: 2.2rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.my-photo {
+  flex: 1;
+  background-image: url(/assets/back-3.png);
+  background-size: calc(700px);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.photo {
+  width: 600px;
+  z-index: 10;
+}
+
+.background {
+ margin-top: 7rem;
+}
+
+#belcola {
+  position: relative;
+  background-color: #fff;
+  font-weight: 900;
+  z-index: 10;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  text-transform: none;
+}
+/* header span b:hover {
+  display: none;
+} */
+
+.show {
+  display: none;
+}
+
+.kola {
+  width: 300px;
+  position: absolute;
+  left: 20rem;
+  top: 13rem;
+}
+
+
+.review-con{
+  /* background-color: rgba(175, 209, 235, 0.746); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: 'Merriweather', serif;
+}
+
+.iframes {
+  /* background-color: #fe234f; */
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+.contact {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact i {
+  color: rgb(103, 103, 220);
+  text-shadow: 0.1rem 0.2rem .3rem rgba(20, 83, 117, 0.55);
+  font-size: 2.5rem;
+  margin-left: 3rem;
+}
+
+.left img {
+  width: 700px;
+}
+
+form {
+  background-color: rgb(132, 192, 252);
+  border-radius: 1rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+input {
+  width: 30rem;
+  height: 4rem;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+  outline: none;
+}
+
+textarea {
+  border: none;
+  border-radius: .5rem;
+  outline: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: rgb(18, 136, 255);
+  border-radius: 2rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 3px;
+  border-bottom: 4px solid rgb(111, 169, 236);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(108, 106, 212);
+}
+
+.view-quote {
+  padding: 1.5rem;
+  background-color:rgb(108, 106, 212) ;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+
+
+/*   *************    JOKE  APP  ***********          */
+
+
+
+
+.wrapper { 
+  width: 80vmin;
+  padding: 50px 40px;
+  background-color: rgb(35, 35, 36);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
+}
+
+.emoji {
+  display: block;
+  text-align: center;
+  font-size: 100px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family:'Montserrat', sans-serif;
+  color: #fff ;
+  font-weight: 300;
+  line-height: 35px;
+  word-wrap: break-word;
+  margin: 30px 0;
+  text-align: center;
+  opacity: 0;
+}
+
+.fade {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#btn {
+  background-color: orange;
+  border: none;
+  font-weight: 600;
+  margin: 0 auto;
+  display: block;
+  padding: 15px 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}

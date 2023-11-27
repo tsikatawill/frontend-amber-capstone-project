@@ -4,8 +4,166 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eleazer - Frontend Amber</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>My name is Eleazer and banku is my favourite food</h1>
+    <div class="container">
+      <nav>navbar</nav>
+      <header>
+        <div class="intro">
+          <h1>
+            i turn <br />
+            <span
+              ><img src="/assets/belcola.png" id="belcola" />
+              <img src="/assets/kola.png" class="kola"
+            /></span>
+            <br />
+            into code
+          </h1>
+          <p class="text">
+            Hi there.. Eleazer Abbey Nii is my name, <br />
+            i'm 23years old. I am a Frontend Engineer from the Amber class at
+            Slightly Techie School. <br />
+            I enjoy eating Waakye and sometimes Kenkey with fried fish.
+            Basketball is one of the games i like the most. When am not coding
+            i watch anime.
+          </p>
+        </div>
+        <div class="my-photo">
+          <img src="/assets/eleazer.png" alt="photo of Eleazer" class="photo" />
+          <!-- <img src="/assets/back-1.png" class="background" > -->
+        </div>
+      </header>
+      <main>
+        <div class="review-con">
+          <img src="/assets/revieew img.png" />
+          <div class="review">
+            <h2>Experiences at STS</h2>
+            <p class="text">
+              My experience at Slightly Techie School has been fun and yet still
+              overwhelming. I joined the school with little to no experience in
+              coding, but now i can build websites. Mr William i realy good at
+              what he does. He helped me to gain knowledge and also understand
+              the fundamentals and concepts required to become a Frontend
+              Engineer. To summerize it all Slightly Techie School is the best
+              place to kick start your tech journey.
+            </p>
+          </div>
+        </div>
+        <h2 class="iframes">Favorite Videos</h2>
+        <div class="iframes">
+          <iframe
+            width="500"
+            height="320"
+            src="https://www.youtube.com/embed/QEgBPs4FuQM"
+            title="TOP 10 NEW ANIMATED MOVIES (2020-2021)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="500"
+            height="320"
+            src="https://www.youtube.com/embed/K8LUKXU4W7g"
+            title="Tutu: The Untold Story of a Kingdom | Proof of Concept African Animation"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="500"
+            height="320"
+            src="https://www.youtube.com/embed/K8LUKXU4W7g"
+            title="Tutu: The Untold Story of a Kingdom | Proof of Concept African Animation"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <iframe
+            width="500"
+            height="320"
+            src="https://www.youtube.com/embed/jYkH3HnuNtk"
+            title="Grappler Baki: The Ultimate Fighter (OVA) (1994) (ENGLISH DUB)"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div class="contact">
+          <div class="left">
+            <h2><i>I would love to hear from you.</i></h2>
+            <img src="/assets/contact.webp" />
+          </div>
+          <form action="https://formsubmit.co/abbeyeleazer@gmail.com" method="POST">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              id="name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email address"
+            />
+            <textarea
+              name="message"
+              placeholder="Your message"
+              id="message"
+              cols="42"
+              rows="10"
+            ></textarea>
+            <button type="submit" class="submit">submit</button>
+          </form>
+        </div>
+        <div class="view-quote">
+          <a href="/pages/eleazer/page1.html">View my free Joke Generator App</a>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      let text = document.querySelector("#belcola");
+      let img = document.querySelector(".kola");
+      let gone = text.classList.remove("show");
+
+      setInterval(function ok() {
+        if (gone) {
+          img.classList.add("show");
+        } else;
+        {
+          text.classList.add("show");
+        }
+      }, 8000);
+
+      // setInterval( function okay (){
+      //   if(text){
+      //   img.classList.add('show');
+      //   }else{
+      //   img.classList.remove('show');
+      //   }
+      //   // loop();
+      // }, 4000);
+
+      window.onload;
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script >
+      function sendEmail (){
+
+Email.send({
+  Host : "smtp.gmail.com",
+  Username : "abbeyeleazer@gmail.com",
+  Password : "982F279E222567CFCBD48597C98FAEE379C5",
+  To : 'abbeyeleazer@gmail.com',
+  From : document.getElementById('email').value,
+  Subject : "New contact form entry",
+  Body : "you"
+}).then(
+  message => alert(message)
+  );
+};
+    </script>
   </body>
 </html>
