@@ -10,27 +10,32 @@
     <div class="scroll">
       <div class="line" id="scrollIndicator"></div>
     </div>
+    <nav>
+      <ul>
+        <div class="home">
+          <li><a href="/pages/eleazer/page.html">Home</a></li>
+        </div>
+        <div class="links">
+          <li><a href="/pages/eleazer/page.html#review">Review</a></li>
+          <li><a href="/pages/eleazer/page.html#videos">Videos</a></li>
+          <li><a href="/pages/eleazer/page.html#contact">contact</a></li>
+        </div>
+      </ul>
+    </nav>
     <div class="container">
-      <nav>
-        <ul>
-          <div class="home">
-            <li><a href="/pages/eleazer/page.html">Home</a></li>
-          </div>
-          <div class="links">
-            <li><a href="/pages/eleazer/page.html#review">Review</a></li>
-            <li><a href="/pages/eleazer/page.html#videos">Videos</a></li>
-            <li><a href="/pages/eleazer/page.html#contact">contact</a></li>
-          </div>
-        </ul>
-      </nav>
+      <img src="/assets/menu-outline.svg" class="menu">
+      <p class="close">X</p>
       <header>
         <div class="intro">
           <h1>
-            i turn <br />
-            <span><img src="/assets/belcola.png" class="bel-text"> </span>
-            <br />
-            into code
-          </h1><img src="/assets/kola.png"  class="kola">
+            I'm a <span class="front" class="delay"> Frontend Engineer</span>
+            <span class="web">Web Developer</span>
+          </h1>
+          <h2>
+            I turn  <span class="bel-text"> BEL~Cola</span>
+            into CODE
+          </h2>
+          <img src="/assets/kola.png" class="kola" />
           <p class="text">
             Hi there.. Eleazer Abbey Nii is my name, <br />
             i'm 23years old. I am a Frontend Engineer from the Amber class at
@@ -46,7 +51,7 @@
         </div>
         <div class="my-photo">
           <img src="/assets/eleazer.png" alt="photo of Eleazer" class="photo" />
-          <!-- <img src="/assets/back-1.png" class="background" > -->
+          <img src="" class="background" >
         </div>
       </header>
       <main>
@@ -100,7 +105,7 @@
           <div class="contact">
             <div class="left">
               <h3><i>I would love to hear from you.</i></h3>
-              <img src="/assets/contact.webp" />
+              <img src="/assets/contact.png" />
             </div>
             <form
               action="https://formsubmit.co/abbeyeleazer@gmail.com"
@@ -115,7 +120,7 @@
               <input
                 type="hidden"
                 name="_next"
-                value="http://127.0.0.1:5501/pages/eleazer/page.html/success.html"
+                value="http://127.0.0.1:5501/pages/eleazer/success.html"
               />
               <input
                 type="text"
@@ -154,20 +159,18 @@
     <script>
       // ******* SCROLL INDICATOR *********
 
+      const scrollElement = document.getElementById("scrollIndicator");
 
-const scrollElement = document.getElementById('scrollIndicator');
+      const maxHeight = window.document.body.scrollHeight - window.innerHeight;
 
-const maxHeight = window.document.body.scrollHeight - window.innerHeight;
+      function topScrollIndicator(e) {
+        const percentage = (window.scrollY / maxHeight) * 100;
 
-function topScrollIndicator (e) {
-      const percentage = ((window.scrollY) / maxHeight) * 100;
-      
-      scrollElement.style.width = percentage + '%';
-};
+        scrollElement.style.width = percentage + "%";
+      }
 
-window.addEventListener('scroll', topScrollIndicator);
-
-
+      window.addEventListener("scroll", topScrollIndicator);
     </script>
+    <script src="./script.js"></script>
   </body>
 </html>

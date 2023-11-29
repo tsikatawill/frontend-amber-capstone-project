@@ -1,5 +1,20 @@
+//     ********  NAV MENU  *******
+
+const menuBtn = document.querySelector('.menu');
+const closeBtn = document.querySelector('.close');
+const menuDisplay = document.querySelector('nav');
 
 
+menuBtn.addEventListener('click', () => {
+      menuDisplay.style.display = 'block';
+      closeBtn.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', () => {
+      menuDisplay.style.display = 'none';
+      closeBtn.style.display = 'none';
+
+});
 
 
 
