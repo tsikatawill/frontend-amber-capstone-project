@@ -44,7 +44,7 @@ p{
   display: none;
 }
 nav {
-  background-image:linear-gradient( to right bottom, rgba(42, 162, 248, 0.5), rgb(3, 89, 150));
+  background-image:linear-gradient( to right bottom, rgba(30, 159, 252, 0.769), rgb(3, 68, 181));
   position: fixed;
   top: 0;
   z-index: 50;
