@@ -83,7 +83,7 @@ header {
 }
 header h1 {
   position: relative;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-family: 'Merriweather', serif;
   font-weight: 900;
   color: rgb(42, 44, 46);
@@ -372,7 +372,18 @@ a {
   font-weight: 500;
 }
 
+/* footer */
 
+footer {
+  background-image:linear-gradient( to right bottom, rgba(30, 159, 252, 0.769), rgb(3, 68, 181));
+  color: #e8e2e2;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  font-size: .8rem;
+}
 
 
 /*   *************    JOKE  APP  ***********          */
@@ -430,7 +441,7 @@ h4 {
 /* MAIL SENT */
 
 .mail-recieved {
-  width: 60%;
+  width: 40%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -461,6 +472,7 @@ h4 {
 
 .mail {
   width: 90%;
+  text-align: center;
 }
 
 
@@ -570,7 +582,12 @@ input {
   width: 100%;
 }
 
-
+footer {
+  padding: 1rem;
+}
+footer p {
+  font-size: .8rem;
+}
 
   }
   
@@ -801,6 +818,12 @@ a {
   font-size: 1.2rem;
 }
 
+footer {
+  padding: .8rem;
+}
+footer p {
+  font-size: .8rem;
+}
 
 }
 
@@ -890,7 +913,9 @@ header h1 {
   text-shadow: 0 0 .1rem rgba(20, 83, 117, 0.55);
   margin-top: 2px;
 }
-
+.intro {
+  padding-top: 0;
+}
 
 header h2 {
   font-size: 1.5rem;
@@ -906,6 +931,7 @@ header h2 {
   .text {
     padding: 1rem 0;
     line-height: 1.5rem;
+    text-align: justify;
   }
   
   .view-joke {
@@ -1026,6 +1052,11 @@ header h2 {
   font-size: .7rem;
   margin-bottom: 4rem;
 }
-   
+footer {
+  padding: .5rem;
+}
+footer p {
+  font-size: .5rem;
+}
   }
   
