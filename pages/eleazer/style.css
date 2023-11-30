@@ -8,6 +8,9 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color:#f2f4f6;
+}
 
 p{
   font-family: 'Montserrat', sans-serif;
@@ -18,12 +21,12 @@ p{
   width: 100%;
 }
 .line { 
-  background: rgb(51, 99, 209); 
+  background: rgb(22, 55, 131); 
   height: 8px; 
   border-radius: 4px; 
   width: 0%; 
   position: fixed; 
-  top: 0; 
+  top: 4.3rem; 
   z-index: 100;
 } 
 
@@ -48,11 +51,16 @@ nav {
   position: fixed;
   top: 0;
   z-index: 50;
-  padding: 1rem;
+  padding: .7rem;
   width: 100%;
   display: flex;
 }
-
+.home img {
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+}
 ul {
   width: 1280px;
   margin: 0 auto;
@@ -63,6 +71,9 @@ ul {
 
 ul li a:hover {
   text-shadow: 2px 2px 5px #000;
+}
+li a {
+  font-size: 1.2rem;
 }
 
 li {
@@ -98,7 +109,7 @@ header h1 {
   color: dodgerblue;
   position: absolute;
   z-index: 30;
-  background-color: #fff;
+  background-color: #f2f4f6;
   animation:moveOutTop 3s ease-in-out 3s 1 ;
 }
 
@@ -121,7 +132,7 @@ header h2 {
 
 
 .bel-text {
-  background-color: #fff;
+  background-color: #f2f4f6;;
   animation:moveOutTop 5s ease-in-out 3s 1;
 }
 
@@ -394,7 +405,7 @@ footer p {
 .wrapper { 
   width: 80vmin;
   padding: 50px 40px;
-  background-color: rgb(35, 35, 36);
+  background-color: rgba(17, 17, 41, 0.744);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -410,7 +421,7 @@ footer p {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family:'Montserrat', sans-serif;
   color: #fff ;
   font-weight: 300;
@@ -426,15 +437,22 @@ h4 {
   transition: opacity 1s;
 }
 
-#btn {
-  background-color: orange;
+
+.btn:hover {
+  background-color: rgb(108, 106, 212);
+}
+
+
+.btn {
+  background-color: rgb(18, 136, 255);
   border: none;
   font-weight: 600;
+  border-bottom: 4px solid rgb(111, 169, 236);
   margin: 0 auto;
   display: block;
   padding: 15px 12px;
-  border-radius: 5px;
-  font-size: 18px;
+  border-radius: 2rem;
+  font-size: 15px;
   cursor: pointer;
 }
 
@@ -868,6 +886,10 @@ footer p {
     font-size: 1.2rem;
     display: none;
   }
+
+ #scrollIndicator{
+  top: 0;
+ }
   nav {
     padding: 4rem 1rem;
     width: 50%;
@@ -1027,9 +1049,16 @@ header h2 {
   /*   *************    JOKE  APP  ***********          */
   
   h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
+  .wrapper {
+    width: 100%;
+    padding: 1rem;
+  }
+  .emoji {
+    font-size: 60px;
+  }
   
 .mail-recieved {
   width: 80%;
