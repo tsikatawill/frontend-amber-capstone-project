@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+main {
+  color: white;
+  background-image: url(../../assets/derrick/page2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wrapper {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
