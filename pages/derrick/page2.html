@@ -3,12 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather app</title>
+    <link rel="stylesheet" href="../../pages/derrick/style2.css" />
+    <link
+      rel="icon"
+      type="image/ico"
+      sizes="32x32"
+      href="../../assets/derrick/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <link rel="stylesheet" href="./style2.css" />
   <body>
-    <main>
-      <div class="app-wrapper"></div>
-    </main>
+    <div class="container">
+      <div class="search-city">
+        <input type="text" spellcheck="false" placeholder="enter city name"  />
+        <button class="btn"><img src="../../assets/derrick/search.png" /></button>
+      </div>
+
+      <div class="weather">
+        <h1 class="temperature"></h1>
+
+
+        <h1 class="city"></h1>
+        <div class="details">
+            <div class="wind-wrapper">
+              <p class="wind"></p> 
+              <p></p>
+            </div>
+
+            <div class="humidity-wrapper">
+              <p class="humidity"></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../pages/derrick/script.js"></script>
   </body>
 </html>

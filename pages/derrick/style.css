@@ -6,9 +6,67 @@
   font-family: "Poppins", sans-serif;
 }
 
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  30% {
+    width: 50px;
+    height: 0px;
+  }
+  60% {
+    width: 50px;
+    height: 80px;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   max-width: 100%;
   overflow-x: hidden;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+
+.navlinks {
+  justify-content: space-between;
+  display: flex;
+  width: 500px;
+  transition-duration: 0.4s;
+}
+
+.navlinks :hover {
+  background-color: coral;
+  transition-duration: 0.4s;
+}
+
+.navlinks li {
+  flex-shrink: 1;
+  list-style: none;
+  display: flex;
+  padding: 1rem 2rem;
+  font-size: larger;
+  border: solid 1px rgb(76, 97, 104);
+  border-radius: 30px;
+}
+
+.bgColor {
+  background-color: white;
+  text-decoration: none;
+  color: black;
 }
 
 main {
@@ -36,8 +94,17 @@ main {
 }
 .myselfText h1 {
   color: coral;
-  font-size: 60px;
+  font-size: 50px;
   font-family: gabarito;
+  overflow: hidden;
+  animation: animate 3s linear forwards;
+}
+.myselfText h3 {
+  color: coral;
+  font-size: 30px;
+  font-family: gabarito;
+  overflow: hidden;
+  animation: animate 3s linear forwards;
 }
 
 .myselfImage {
@@ -49,48 +116,6 @@ main {
   flex-wrap: wrap;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  transition: 0.4s;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  color: white;
-}
-
-.navlinks {
-  justify-content: space-between;
-  display: flex;
-  width: 500px;
-}
-
-.navlinks :hover {
-  background-color: cadetblue;
-}
-
-.navlinks li {
-  flex-shrink: 1;
-  list-style: none;
-  display: flex;
-  padding: 1rem 2rem;
-  font-size: larger;
-  border: solid 1px rgb(76, 97, 104);
-  border-radius: 30px;
-}
-
-.bgColor {
-  background-color: white;
-  text-decoration: none;
-  color: black;
-}
 .socials {
   display: flex;
   justify-content: center;
@@ -98,7 +123,6 @@ a {
   gap: 3rem;
   padding-bottom: 1rem;
 }
-
 .myselfImage img {
   --s: 15px;
   --b: 2px;
@@ -116,6 +140,7 @@ a {
   transition: 0.4s;
   cursor: pointer;
 }
+
 img:hover {
   outline: var(--b) solid var(--c);
   outline-offset: calc(var(--s) / -2);
@@ -130,17 +155,13 @@ section {
   font-size: 1.7rem;
   padding: 2rem;
   display: flex;
+  align-items: center;
+  gap: 5rem;
 }
 .review-text {
-  flex: 60%;
+  width: 60%;
   display: flex;
   flex-direction: column;
-}
-.review-image {
-  flex: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .review-text h1 {
   color: coral;
@@ -159,6 +180,7 @@ article {
   border-top: solid coral;
   gap: 4rem;
   padding: 4rem 2rem;
+  /* overflow-x: auto; */
 }
 footer {
   background-color: black;
@@ -186,22 +208,20 @@ footer {
   padding: 3rem;
   margin-bottom: 3rem;
 }
-.weatherPage a {
+.proceed-btn {
   text-align: center;
   border: solid coral;
   padding: 1rem;
   width: 200px;
   border-radius: 1rem;
   margin-top: 1rem;
-  /* display: flex; */
-  /* justify-content: center; */
+  transition-duration: 0.4s;
 }
-.weatherPage :hover {
+.proceed-btn:hover {
   background-color: coral;
 }
 .contact-card {
-  /* border: solid blue; */
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #00feba, #5b548a);
   color: black;
   border-radius: 2rem;
   padding: 2rem;
@@ -209,14 +229,9 @@ footer {
   flex-direction: row;
   font-size: 20px;
   gap: 3rem;
-  /* width: 800px; */
-  /* flex-shrink: 1; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 .contact-card h3 {
   padding-bottom: 2rem;
-  /* text-align: center; */
 }
 .contact-card-1 {
   display: flex;
@@ -226,7 +241,12 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  /* padding: 1rem; */
+}
+.contact-details p {
+  align-self: center;
+}
+.contact-details a {
+  align-self: center;
 }
 form {
   display: flex;
@@ -234,19 +254,104 @@ form {
   gap: 0.7rem;
 }
 input {
-  padding: 0.2rem;
+  padding: 0.3rem;
+  padding-left: 0.4rem;
   border-radius: 0.5rem;
-}
-.label2 {
-  padding-right: 0.3rem;
-}
-textarea {
-  resize: none;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  background: #ebfffc;
 }
 
-@media screen and (max-width: 869px) {
+textarea {
+  resize: none;
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  font-size: 15px;
+  justify-content: end;
+  vertical-align: middle;
+}
+
+.btn {
+  width: fit-content;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: #72c7bd;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+.btn:hover {
+  background-color: #76eee0;
+}
+@media screen and (max-width: 320px) {
+  .navbar {
+    flex-direction: row;
+    flex-shrink: 1;
+    padding-left: 0;
+  }
+  .navlinks li {
+    padding: 0 3px;
+  }
+  .navbar img {
+    width: 60px;
+  }
+}
+
+@media (min-width: 32px) and (max-width: 480px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  .navbar img {
+    width: 70px;
+    height: 30px;
+  }
+  .navlinks li {
+    padding: 0.2rem 0.5rem;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+  .navlinks {
+    justify-content: end;
+    gap: 1rem;
+    width: fit-content;
+  }
+
+  .bgColor {
+    display: flex;
+  }
+  .navbar h1 {
+    font-size: 20px;
+  }
   .myselfContainer {
     flex-direction: column;
+    padding-top: 6rem;
+    padding: 8rem 20px 60px 20px;
+  }
+  .myselfText p {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+  .myselfText h1 {
+    color: coral;
+    font-size: 2rem;
+  }
+  .myselfText h3 {
+    color: coral;
+    font-size: 1.5rem;
   }
 
   .myselfText {
@@ -255,26 +360,171 @@ textarea {
 
   .myselfImage {
     width: 100%;
+    padding: 1rem;
   }
-  .navbar {
-    flex-wrap: wrap;
+  .review-card {
+    color: white;
+    font-size: 1rem;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .review-text {
+    width: 100%;
+  }
+  .review-text h1 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    width: fit-content;
+  }
+  .review-image {
+    padding-top: 0;
+  }
+
+  .iframe-wrapper {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 1.2rem;
+  }
+  iframe {
+    width: 250px;
+    height: 180px;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+
+  /*  
+  .menu-btn {
+    display: block;
+  }
+  .sidebar {
+    display: block;
+  } */
+  section {
+    padding: 60px 20px 60px 20px;
+  }
+
+  .footer-container p {
+    font-size: 1rem;
+  }
+  .footer-container a {
+    font-size: 1rem;
+  }
+  .weatherPage {
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .proceed-btn {
+    padding: 10px;
+    width: 100px;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-card {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: black;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
+    margin-top: 1rem;
+  }
+  .contact-card h3 {
+    padding-bottom: 1rem;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 991px) {
+  .navbar {
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    flex-direction: row;
+    padding-left: 0;
+  }
+  .navbar img {
+    width: 70px;
+    height: 30px;
+  }
+  .navbar h1 {
+    font-size: 20px;
+  }
+  .navlinks li {
+    padding: 0.2rem 0.5rem;
+    font-size: 22px;
+    border-radius: 30px;
+  }
+  .navlinks {
+    justify-content: space-around;
+  }
+  .bgColor {
+    display: flex;
+    justify-content: space-between;
+  }
+  .myselfContainer {
+    flex-direction: column;
+    padding-top: 6rem;
+    padding: 8rem 20px 60px 20px;
+  }
+  .myselfText p {
+    font-size: 1.6rem;
+    padding: 0.3rem;
+  }
+  .myselfText h1 {
+    color: coral;
+    font-size: 4rem;
+  }
+  .myselfText h3 {
+    color: coral;
+    font-size: 2.6rem;
+  }
+  .myselfText {
+    width: 100%;
+  }
+  .myselfImage {
+    width: 100%;
+    padding: 1rem;
   }
   .review-card {
     flex-direction: column;
   }
-
   .review-text {
     width: 100%;
   }
+  .review-text h1 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    width: fit-content;
+  }
   .review-image {
     padding-top: 3rem;
-    width: 100%;
+  }
+  .review-image img {
+    width: 10px;
+    height: 10px;
   }
   .iframe-wrapper {
     display: flex;
-    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 1.2rem;
+  }
+  iframe {
+    width: 250px;
+    height: 180px;
   }
   article {
     display: flex;
@@ -286,15 +536,59 @@ textarea {
     display: flex;
     flex-direction: column;
   }
-}
+  /* .menu-btn {
+    display: block;
+  }
+  .sidebar {
+    display: block;
+  } */
+  section {
+    padding: 60px 20px 60px 20px;
+  }
+  .review-card {
+    color: white;
+    font-size: 1.6rem;
+    padding: 0.3rem;
+    display: flex;
+  }
+  .footer-container p {
+    font-size: 1.6rem;
+  }
+  .footer-container a {
+    font-size: 1.6rem;
+  }
+  .weatherPage {
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .proceed-btn {
+    padding: 10px;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* footer {
-  font-size: 1.2rem;
+  .contact-card {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: black;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .contact-card h3 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .contact-card p {
+    font-size: 1.6rem;
+  }
+  input,
+  textarea {
+    font-size: 1.2rem;
+  }
 }
-.myselfText p {
-  font-size: 1.2rem;
-}
-.review-card {
-  flex-direction: column;
-  font-size: 1.2rem;
-} */

@@ -25,30 +25,31 @@
 
   <body>
     <script src="./script.js"></script>
+   
 
     <main>
       <div class="navbar">
-        <h1 style="font-style: italic"><a href="./">Deerriicckk</a></h1>
+        <img src="../../assets/derrick/logo.png" width="100px" height="50px" alt="">
 
         <ul class="navlinks">
           <li><a href="./page.html"> Home </a></li>
-          <li><a href="./page.html"> About </a></li>
-          <li><a href="./page.html"> Contact </a></li>
+          <li><a href="#sec"> About </a></li>
+          <li><a href="#contact-card"> Contact </a></li>
         </ul>
+        
       </div>
-
-      <!-- <div style="height: 110px"></div> -->
+      
 
       <div class="myselfContainer">
         <div class="myselfText">
-          <h1>Yeboah Derrick</h1>
-          <h1>Front-End Amber</h1>
+          <h1> Derrick Yeboah</h1>
+          <h3>Front-End Amber</h3>
           <br />
           <p>
             Hey there, I'm Derrick, a front-end student on a journey to explore
             the world of web development. I'm learning the ropes of HTML, CSS,
             and JavaScript, with a passion for creating user-friendly
-            interfaces. Join me as I navigate the exciting path of turning ideas
+            interfaces. Join me as I navigate the exciting path of turning codes
             into web reality. Let's code together!
           </p>
         </div>
@@ -62,33 +63,11 @@
           />
         </div>
       </div>
-      <div class="socials">
-        <a href=""
-          ><img
-            src="../../assets/derrick/social1.png"
-            alt=""
-            width="70px"
-            height="70px"
-        /></a>
-        <a href=""
-          ><img
-            src="../../assets/derrick/linkedin.png"
-            alt=""
-            width="70px"
-            height="70px"
-        /></a>
-        <a href=""
-          ><img
-            src="../../assets/derrick/discord.png"
-            alt=""
-            width="70px"
-            height="70px"
-        /></a>
       </div>
     </main>
 
-    <section>
-      <div class="review-card">
+    <section id="sec">
+      <div class="review-card" >
         <div class="review-text">
           <h1>Slightly Techie?</h1>
           <p>
@@ -103,14 +82,13 @@
           </p>
         </div>
 
-        <div class="review-image">
           <img
             src="../../assets/derrick/ST.jpg"
             alt=""
             width="300px"
             height="300px"
+            class="review-image"
           />
-        </div>
       </div>
     </section>
 
@@ -148,12 +126,12 @@
 
     <footer>
       <div class="footer-container">
-        <div class="weatherPage">
-          Checkout a live weather forecast page I created with api requests
-          <a href="./page2.html">Proceed</a>
-        </div>
+        <nav class="weatherPage">
+          <p>Checkout a live weather forecast page I created with api requests</p>
+          <a class="proceed-btn"  href="./page2.html">Proceed</a>
+        </nav>
 
-        <div class="contact-card">
+        <div class="contact-card" id="contact-card">
           <div class="contact-card-1">
             <h3>Let's get in touch</h3>
             <div class="contact-details">
@@ -222,19 +200,21 @@
           </div>
           <div class="contact-card-2">
             <h3>Contact me</h3>
-            <form action="../derrick/page.html">
+            <form
+              class="form"
+              action="https://formsubmit.co/derrickyebs@gmail.com"
+              method="POST"
+            >
               <div>
-                <label class="label1" for="name">Name:</label>
                 <input
                   name="name"
                   id="name"
                   required
-                  placeholder="name"
+                  placeholder="Name"
                   type="text"
                 />
               </div>
               <div>
-                <label class="label2" for="email">Email:</label>
                 <input
                   name="email"
                   id="email"
@@ -246,26 +226,17 @@
               <textarea
                 name="comment"
                 id="comment"
-                cols="6"
-                placeholder="Comment here"
-                rows="3"
-              >
-              </textarea>
+                cols="5"
+                rows="2"
+                placeholder="Message"
+              ></textarea>
 
-              <button type="submit">Submit</button>
+              <button class="btn" type="submit">Send</button>
             </form>
           </div>
         </div>
       </div>
     </footer>
+    
   </body>
 </html>
-
-<!-- <div>
-           
-          </div>
-          <div>
-            
-              <p></p> -->
-
-<!-- </div> -->
