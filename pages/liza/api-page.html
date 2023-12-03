@@ -8,6 +8,7 @@
   href="https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Lilita+One&family=Marcellus&display=swap"
   rel="stylesheet"
 />
+<link rel="icon" type="image/x-icon" href="../../assets/liza/hs.png">
 </head>
 <body>
 <div id="container">
@@ -18,7 +19,7 @@
 	<div id="selectionarea">
 		<p><h3 id="txt">What's your sign?</h3></p>
 
-		<select id="horoscope" name="zodiac" onchange="selffunction()">
+		<select id="horoscope" class="horoscope" name="zodiac" onchange="selffunction()">
 			<option  value="default">Please select</option>
 			<option value="Aries">Aries (March 21 - April 19)</option>
 			<option value="Taurus">Taurus (April 20 - May 20)</option>
@@ -34,7 +35,7 @@
 			<option value="Pisces">Pisces (February 19 - March 20)</option>
 			
 		</select>
-		<input  type="button" value="Restart" name="" onclick="window.location.reload()" id="restartbtn" style="visibility: hidden;">
+		<input  type="button" class="restart-button" value="Restart" name="" onclick="window.location.reload()" id="restartbtn" style="visibility: hidden;">
 	 </div>
 	 <br>
 	 <div id="horoscopetxt">
@@ -42,7 +43,7 @@
 	 	<textarea id="textrow2" class="textrow2"   disabled></textarea>
 	 </div>
 	 <br>
-   <audio src="../../assets/liza/Amaarae-Co-Star-(TrendyBeatz.com).mp3" autoplay controls></audio>
+   <audio class="music" src="../../assets/liza/Amaarae-Co-Star-(TrendyBeatz.com).mp3" autoplay controls></audio>
 
 </div>
 

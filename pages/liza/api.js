@@ -21,19 +21,19 @@ function selffunction() {
     "Element: Water\nQuality: Mutable\nColor: Mauve, Lilac, Purple, Violet, Sea green\nDay: Thursday\nRuler: Neptune, Jupiter\nGreatest Overall Compatibility: Virgo, Taurus\nLucky Numbers: 3, 9, 12, 15, 18, 24\nDate range: February 19 - March 20\n\n\nStrengths: Compassionate, artistic, intuitive, gentle, wise, musical\nWeaknesses: Fearful, overly trusting, sad, desire to escape reality, can be a victim or a martyr\nPisces likes: Being alone, sleeping, music, romance, visual media, swimming, spiritual themes\nPisces dislikes: Know-it-all, being criticized, the past coming back to haunt, cruelty of any kind.",
   ];
   var src = [
-    "Aries.png",
-    "Taurus.png",
-    "Gemini.png",
-    "Cancer.png",
-    "Leo.png",
-    "Virgo.png",
-    "Libra.png",
-    "Scorpio.png",
-    "Sagittarius.png",
-    "Capricor.png",
-    "Aquarius.png",
-    "Pisces.png",
-    "hs.png",
+    "../../assets/liza/Aries.png",
+    "../../assets/liza/Taurus.png",
+    "../../assets/liza/Gemini.png",
+    "../../assets/liza/Cancer.png",
+    "../../assets/liza/Leo.png",
+    "../../assets/liza/Virgo.png",
+    "../../assets/liza/Libra.png",
+    "../../assets/liza/Scorpio.png",
+    "../../assets/liza/Sagittarius.png",
+    "../../assets/liza/Capricor.png",
+    "../../assets/liza/Aquarius.png",
+    "../../assets/liza/Pisces.png",
+    "../../assets/liza/hs.png",
   ];
 
   if (hs == "Aries") {

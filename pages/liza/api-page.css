@@ -10,6 +10,25 @@ body {
   justify-content: center;
   align-items: center;
 }
+.restart-button {
+  height: 25px;
+  width: 80px;
+  border-radius: 6px;
+  border: none;
+  background-color: #e60558;
+  font-family: marcellus;
+  font-weight: 400;
+}
+.horoscope {
+  height: 25px;
+  border-radius: 6px;
+  border: none;
+  font-family: marcellus;
+  background-color: #e591c3;
+}
+.horoscope option {
+  /* background-color: #e60558; */
+}
 .textrow2 {
   margin: 0px;
   width: 900px;
@@ -18,4 +37,8 @@ body {
   padding: 2rem;
   text-align: center;
   font-size: 20px;
+  font-family: marcellus;
+}
+
+.music {
 }
