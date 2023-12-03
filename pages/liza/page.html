@@ -4,8 +4,237 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Liza - Frontend Amber</title>
+
+    <link rel="stylesheet" href="./page.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Lilita+One&family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.cdnfonts.com/css/horror-type" rel="stylesheet" />
   </head>
   <body>
-    <h1>My name is Liza and I really enjoy eating Fufu</h1>
+    <div class="scroll">
+      <div class="line" id="scrollIndicator"></div>
+    </div>
+    <div class="main-container">
+      <div class="first-container">
+        <div class="nav-bar">
+          <a href=""><div class="logo">LA</div></a>
+
+          <div class="space-nav">
+            <div class="name">Liza Aikins</div>
+
+            <div class="nav-menu">
+              <ul>
+                <li>
+                  <a href="#about"><div class="about-nav nav">About</div></a>
+                </li>
+                <li>
+                  <a href="#review"><div class="review-nav nav">Review</div></a>
+                </li>
+                <li>
+                  <a href="#fav-videos"
+                    ><div class="fav-videos-nav nav">Fav Videos</div></a
+                  >
+                </li>
+                <li>
+                  <a href="#api-request"
+                    ><div class="api-nav nav">API Request</div></a
+                  >
+                </li>
+                <li>
+                  <a href="#contact"
+                    ><div class="contact-nav nav">Contact Me</div></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="info">
+          Student <br />
+          Aspiring Software Engineer
+        </div>
+        <div class="pic-container">
+          <img
+            class="main-pic"
+            src="../../assets/liza/laptop-memoji.png"
+            alt=""
+          />
+        </div>
+        <div class="big-name">LIZA AIKINS</div>
+      </div>
+
+      <div class="about" id="about">
+        <h1 class="about-title red-title" id="about-title">ABOUT</h1>
+        <div class="about-pic-text">
+          <h2 class="about-liza">
+            I'm a computer science student interested in web and mobile app
+            development. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing
+            <br />
+            elit. Nulla veniam ad obcaecati rerum alias, sit eum autem, <br />
+            doloremque repellat quibusdam debitis temporibus, similique minus
+            <br />
+            nemo magnam ipsa ullam. Esse, aspernatur?
+          </h2>
+          <img
+            class="about-img image"
+            src="../../assets/liza/psst-memoji.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="review-div" id="review">
+        <h1 class="review-title black-title">REVIEW</h1>
+        <div class="review-pic-text">
+          <h2 class="my-review">
+            My experience at Slightly Techie School as a frontend development
+            student has been awesome. <br />
+            The curriculum was really well-structured and covered everything I
+            needed to know <br />
+            about Frontend Development. I got to embark on real projects which
+            gave me a better <br />
+            understanding of what i learnt and after every assignment completed,
+            i felt more confident.
+            <br />
+            Another thing i loved was the collaborative discussions in my class.
+            <br />
+            Everyone was so supportive and willing to help out. <br />
+            William was also super accessible and always there to answer any
+            questions I had.
+            <br />
+            I would highly recommend Slightly Techie School to anyone seeking to
+            master Frontend Development.
+          </h2>
+          <img
+            class="review-pic image"
+            src="../../assets/liza/thumbs-up-memoji.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="fav-videos-div" id="fav-videos">
+        <h1 class="fav-video-title red-title">MY FAV VIDEOS</h1>
+
+        <div class="video-pic">
+          <div class="the-stick">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/bl8SYiLmeaQ?si=w-d8a_xGlef1FxTr"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/lwrm8kRlHLg?si=5eyURmJf9XztRk4z"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="idea-pic-container">
+            <img
+              class="idea-pic image"
+              src="../../assets/liza/idea-memoji.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="api-request-div" id="api-request">
+        <div class="button-apiTitle">
+          <div class="api-button-container">
+            <a href="./api-page.html">
+              <button class="api-go">WHAT'S YOUR SIGN?</button>
+            </a>
+          </div>
+
+          <h1 class="api-title black-title">
+            MAKING API <br />
+            REQUESTS
+          </h1>
+        </div>
+
+        <img
+          class="connect-pic image"
+          src="../../assets/liza/call-memoji.png"
+          alt=""
+        />
+      </div>
+
+      <div class="contact-div" id="contact">
+        <h1 class="contact-title red-title">LET'S CONNECT</h1>
+
+        <div class="form-mediagrid">
+          <div class="form-div">
+            <form action="">
+              <div class="fullname">
+                <input
+                  type="text"
+                  placeholder="first name"
+                  class="input name"
+                />
+                <input type="text" placeholder="last name" class="input name" />
+              </div>
+
+              <input type="email" placeholder="email address" class="input" />
+              <input type="text" placeholder="subject" class="input" />
+              <input type="text" placeholder="message" class="input message" />
+
+              <input type="submit" class="submit" />
+            </form>
+          </div>
+          <div class="social-media-grid">
+            <a href="https://www.linkedin.com/in/liza-aikins-a71b92228/">
+              <img
+                class="social-media"
+                src="../../assets/liza/icons8-linkedin (1).svg"
+                alt=""
+              />
+            </a>
+            <a href="https://www.instagram.com/lizaaikinsxo/">
+              <img
+                class="social-media"
+                src="../../assets/liza/icons8-instagram (1).svg"
+                alt=""
+              />
+            </a>
+            <a href="https://twitter.com/omogedollarz">
+              <img
+                class="social-media"
+                src="../../assets/liza/icons8-twitterx (1).svg"
+                alt=""
+              />
+            </a>
+            <a href="https://github.com/lnaikins">
+              <img
+                class="social-media"
+                src="../../assets/liza/icons8-github (1).svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <footer>Made by Liza N. Aikins</footer> -->
+
+    <script src="./script.js"></script>
   </body>
 </html>

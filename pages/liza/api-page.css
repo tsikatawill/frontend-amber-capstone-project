@@ -1,0 +1,21 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  height: 100vh;
+  background: radial-gradient(#e66465, #9198e5);
+  font-family: Marcellus, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textrow2 {
+  margin: 0px;
+  width: 900px;
+  height: 366px;
+  background: radial-gradient(#e60558, #e591c3);
+  padding: 2rem;
+  text-align: center;
+  font-size: 20px;
+}
