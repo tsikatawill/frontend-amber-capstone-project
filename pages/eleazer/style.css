@@ -918,13 +918,10 @@ footer p {
   
   /* HEADER */
   
-  header {
-    margin-top: 3rem;
-    flex-direction: column-reverse;
-  }
   
-header {
-  margin-top: 5rem;
+  header {
+  flex-direction: column-reverse;
+  margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -954,6 +951,7 @@ header h2 {
     padding: 1rem 0;
     line-height: 1.5rem;
     text-align: justify;
+    margin-left: 1rem;
   }
   
   .view-joke {
@@ -962,16 +960,16 @@ header h2 {
   } 
   
   .my-photo {
-    background-size: calc(400px);
+    background-size: calc(300px);
   }
   .photo {
     display: flex;
     justify-content: center;
-    width: 350px;
+    width: 250px;
   }
   
   .background {
-   margin-top: 7rem;
+   margin-top: 5rem;
   }
   
   .review-con{
@@ -1000,9 +998,9 @@ header h2 {
   
   iframe {
     border-radius: 5px;
-    width:420px;
-    height:250px;
-  
+    width:350px;
+    height:auto;
+    margin-bottom: 1.5rem;
   }
   
   /* contact */
@@ -1033,6 +1031,7 @@ header h2 {
     width: 100%;
     height: 3rem;
     font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
   
   button {
