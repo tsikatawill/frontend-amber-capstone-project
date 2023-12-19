@@ -51,22 +51,14 @@ const form = document.getElementsByClassName(".form");
 form.addEventListener("submit", function handleSubmit(event) {
   event.preventDefault();
 
-  // 👇️ Reset the form here
   form.reset();
 });
 
-// sidebar.style.display='block'
-// sidebar.style.left='0'
+const navbar = document.querySelector(".side-nav");
+const menuBtns = document.querySelectorAll(".menu-icon-container");
 
-window.onscroll = function () {
-  myFunction();
-};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
+menuBtns.forEach((menuBtn) => {
+  menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle(".open");
+  });
+});
