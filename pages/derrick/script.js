@@ -17,36 +17,53 @@ window.addEventListener("scroll", changeNavBg);
 const apiKey = "1015cc3ea9a0c367c05fc006c28af981";
 
 const searchInput = document.querySelector(".search-city input");
-const searchBtn = document.querySelector(".search-city button");
+const searchForm = document.querySelector(".search-city");
+const weatherDetails = document.querySelector(".weather-details");
+const city = document.querySelector(".city");
+const temperature = document.querySelector(".temperature");
+const humidity = document.querySelector(".humidity");
+const wind = document.querySelector(".wind");
+const errorMsg = document.querySelector(".error-msg");
 
-const weather = async (city) => {
+const weather = async (cityName) => {
   const response = await fetch(
     "https://api.openweathermap.org/data/2.5/weather?units=metric&q=" +
-      city +
+      cityName +
       `&appid=${apiKey}`
   );
 
-  if (response.status == "") {
-    document.querySelector(".weather").style.display = "Input City ";
-  } else {
+  if (response.ok) {
     var data = await response.json();
 
-    document.querySelector(".city").innerHTML = data.name;
-    document.querySelector(".temperature").innerHTML =
-      Math.round(data.main.temp) + "°C";
-    document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-    document.querySelector(".wind").innerHTML = data.wind.speed + "km/hr";
-
-    document.querySelector(".weather").style.display = "block";
+    weatherDetails.style.display = "block";
+    city.innerHTML = data.name;
+    temperature.innerHTML = Math.round(data.main.temp) + "°C";
+    humidity.innerHTML = data.main.humidity + "%";
+    wind.innerHTML = data.wind.speed + "km/hr";
+    errorMsg.style.display = "none";
+  } else {
+    weatherDetails.style.display = "none";
+    errorMsg.style.display = "block";
+    errorMsg.innerHTML = "City not found";
   }
 };
 
-searchBtn.addEventListener("click", () => {
-  weather(searchInput.value);
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (searchInput.value.trim() === "") {
+    weatherDetails.style.display = "none";
+    errorMsg.style.display = "block";
+    errorMsg.innerHTML = "Enter a city";
+  } else {
+    errorMsg.style.display = "none";
+    weatherDetails.style.display = "block";
+    weather(searchInput.value);
+  }
 });
 
 // Form reset
-const form = document.getElementsByClassName(".form");
+const form = document.getElementsByClassName(".contact-form");
 
 form.addEventListener("submit", function handleSubmit(event) {
   event.preventDefault();
