@@ -20,8 +20,6 @@ html {
   height: 8px;
   border-radius: 9px;
   width: 0%;
-  /* position: fixed; */
-  /* z-index: -100; */
 }
 
 a {
@@ -31,10 +29,6 @@ a {
 
 main {
   background-color: #444343;
-  /* width: 100%; */
-  /* height: 1000vh; */
-  /* position: fixed; */
-  left: 180px;
 }
 
 .navbar {
@@ -57,23 +51,16 @@ main {
   text-decoration: none;
   padding: 14px 12px;
   border-radius: 10px;
-  /* border: solid saddlebrown; */
-  /* transition-duration: 0.4s; */
-  /* background-color: blue; */
 }
 
 .navlinks li {
   flex-shrink: 1;
   list-style: none;
   display: flex;
-  /* padding: 1r 2rem; */
   font-size: larger;
-
-  /* border-radius: 30px; */
 }
 .navlinks li a {
   border: solid 1px rgb(76, 97, 104);
-  /* background-color: red; */
   padding: 8px 20px;
   border-radius: 30px;
 }
@@ -86,7 +73,6 @@ main {
   background-color: white;
   text-decoration: none;
   color: black;
-  /* margin-top: 10px; */
 }
 
 main {
@@ -116,11 +102,8 @@ main {
   color: coral;
   font-size: 60px;
   font-family: gabarito;
-  /* overflow: hidden; */
-  /* animation: animate 3s linear forwards; */
 }
 .myself-heading {
-  /* border: solid honeydew; */
   padding-bottom: 1rem;
 }
 .myselfImage {
@@ -135,7 +118,7 @@ main {
 .myselfImage img {
   --s: 15px;
   --b: 2px;
-  --w: 300px;
+  --w: 400px;
   --c: #7b3b3b;
   width: var(--w);
   aspect-ratio: 1;
@@ -178,11 +161,13 @@ section {
   font-family: gabarito;
   padding-bottom: 40px;
 }
+.review-text a {
+  text-decoration: underline;
+  color: rgb(126, 126, 192);
+}
 article {
   padding: 8rem 3rem;
   background-color: #110909;
-  /* overflow-x: scroll; */
-  /* overflow-x: hidden; */
 }
 .iframe-wrapper {
   flex-shrink: 1;
@@ -192,20 +177,17 @@ article {
   border-top: solid coral;
   gap: 4rem;
   padding: 6rem 2rem;
-  /* overflow-x: scroll; */
-  /* overflow-x: auto; */
 }
-footer {
-  background-color: rgb(24, 23, 23);
+
+.weather-container {
+  background-color: #141010;
   color: white;
-  font-size: 1.7rem;
-  padding: 4rem 3rem;
-}
-.footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.7rem;
+  padding: 6rem 0rem;
 }
 .weatherPage {
   display: flex;
@@ -214,80 +196,63 @@ footer {
   align-items: center;
   border-left: solid coral;
   border-right: solid coral;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  padding: 3rem;
-  margin: 4rem 0;
+  padding: 3rem 5rem;
+  width: fit-content;
 }
 .proceed-btn {
   text-align: center;
-  border: solid 1px coral;
+  border: solid rgb(202, 95, 56);
   padding: 1rem;
-  width: 200px;
+  display: flex;
+  flex-shrink: 1;
   border-radius: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   transition-duration: 0.4s;
 }
 .proceed-btn:hover {
   background-color: rgb(202, 95, 56);
 }
+footer {
+  font-size: 1.7rem;
+  padding: 3rem 0rem;
+  color: white;
+  background-image: url(../../assets/derrick/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.8);
+}
 .contact-card {
-  background: linear-gradient(135deg, #00feba, #5b548a);
-  color: black;
-  border-radius: 2rem;
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  font-size: 20px;
-  gap: 3rem;
-  margin-top: 10px;
-}
-.contact-card h3 {
-  padding-bottom: 2rem;
-}
-.contact-card-1 {
   display: flex;
   flex-direction: column;
 }
-.contact-details {
+.contact-card h1 {
+  text-align: center;
+  color: coral;
+}
+.contact-card-text {
+  display: flex;
+  width: 60%;
+}
+.contact-card-form {
   display: flex;
   flex-direction: row;
-  gap: 8px;
-  /* justify-content: center; */
-  align-items: center;
-  /* border: solid lawngreen; */
-}
-.contact-details .bx {
-  font-size: 26px;
-  color: rgb(172, 68, 68);
-}
-
-.contact-details div {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  /* background-color: salmon; */
-  position: relative;
-}
-.contact-details svg {
-  height: 30px;
-  width: 30px;
-  left: 100px;
+  padding: 2rem 4rem;
 }
 .social-media-links-wrapper {
-  margin-top: 60px;
+  margin-top: 20px;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 60px;
 }
-
 .social-media-links-wrapper .bx {
   font-size: 30px;
   border-radius: 50%;
   padding: 6px;
-  color: black;
   transition: 0.4s ease-in-out;
+  background-color: white;
+  color: black;
 }
 .social-media-links-wrapper .bx:hover {
   background-color: black;
@@ -296,15 +261,16 @@ footer {
 form {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 16px;
 }
 input {
-  padding: 0.3rem;
-  padding-left: 0.4rem;
+  padding: 0.5rem 0.4rem;
   border-radius: 0.5rem;
   border: 0;
   outline: 0;
   font-size: 15px;
+  font-weight: 500;
+  width: 400px;
   background: #ebfffc;
 }
 
@@ -316,32 +282,31 @@ textarea {
   padding: 0.3rem;
   border-radius: 0.5rem;
   display: flex;
-  font-size: 15px;
+  font-size: 18px;
   justify-content: end;
   vertical-align: middle;
 }
 
 .btn {
-  width: fit-content;
+  width: 400px;
   border: 0;
   outline: 0;
   padding: 0.5rem;
   border-radius: 0.4rem;
-  background-color: #65b1a8;
-  font-size: 16px;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 20px;
   cursor: pointer;
   text-decoration: none;
   transition-duration: 0.4s;
 }
 .btn:hover {
-  background-color: #7ef5e7;
+  background-color: black;
+  color: white;
 }
-.side-nav,
-.sidebar,
-.menu-bar {
+.menu-card-wrapper {
   display: none;
 }
-
 @media screen and (max-width: 670px) {
   .navbar-mobile {
     display: block;
@@ -379,7 +344,6 @@ textarea {
   }
   .myselfContainer {
     flex-direction: column;
-    /* padding-top: 6rem; */
     padding: 3rem 20px 7rem 20px;
     gap: 4rem;
   }
@@ -404,6 +368,9 @@ textarea {
     width: 100%;
     padding: 1rem;
   }
+  .myselfImage img {
+    height: 350px;
+  }
   .review-card {
     color: white;
     font-size: 1rem;
@@ -425,10 +392,12 @@ textarea {
     height: 250px;
     width: 250px;
   }
+  .review-image img {
+    height: 350px;
+  }
 
   .iframe-wrapper {
     display: flex;
-    /* gap: 1.2rem; */
     overflow-x: scroll;
     padding: 4rem 2rem;
   }
@@ -450,7 +419,7 @@ textarea {
     padding-bottom: 1rem;
   }
   footer {
-    padding-bottom: 11rem;
+    padding-bottom: 9rem;
     padding-top: 3rem;
     display: flex;
     flex-direction: column;
@@ -466,39 +435,44 @@ textarea {
     font-size: 1rem;
   }
   .weatherPage {
-    padding: 2rem 2rem;
+    display: flex;
+    font-size: 1rem;
     margin: 4rem 1rem;
-    gap: 2rem;
-    /* justify-content: center; */
-    align-items: center;
+    padding: 1.4rem;
   }
   .proceed-btn {
     padding: 10px;
-    width: 100px;
     border-radius: 1rem;
-    /* margin-top: 1rem; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  .contact-card {
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: black;
-    border-radius: 1rem;
-    padding: 2rem;
-    display: flex;
+  .contact-card h1 {
+    font-size: 2rem;
+  }
+  .contact-card-form {
+    font-size: 1rem;
+    padding: 1rem;
+    padding-bottom: 0;
     flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
   }
-  .contact-card h3 {
-    padding-bottom: 1rem;
-    font-size: 18px;
+  .contact-card-text {
+    display: flex;
+    width: auto;
   }
+  .conact-form {
+    padding: 1rem;
+  }
+  .contact-card-text br {
+    display: none;
+  }
+
   input,
-  textarea {
+  textarea,
+  .btn {
     width: 100%;
   }
   .menu-bar {
@@ -506,11 +480,13 @@ textarea {
     justify-content: space-evenly;
     position: fixed;
     bottom: 20px;
+    gap: 0.8rem;
     width: fit-content;
-    padding: 0 16px;
+    padding: 8px 16px;
     border-radius: 2rem;
-    background-color: rgb(13, 13, 61);
+    background-color: rgb(4, 4, 4);
     z-index: 1000;
+    align-items: center;
   }
   .menu-card-wrapper {
     display: flex;
@@ -522,23 +498,26 @@ textarea {
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 14px 12px;
+    padding: 6px 12px;
     border-radius: 10px;
   }
+  .menu-bar-list a {
+    display: flex;
+  }
   .menu-bar .icon {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 30px;
     border-radius: 50%;
-    padding: 8px;
+    padding: 6px;
     transition: 0.4s;
   }
   .menu-bar .icon:hover {
     color: black;
-    background-color: dodgerblue;
+    background-color: white;
   }
 }
 
-@media (min-width: 480px) and (max-width: 991px) {
+@media (min-width: 671px) and (max-width: 991px) {
   .side-nav {
     display: none;
   }
@@ -592,8 +571,8 @@ textarea {
     width: 100%;
   }
   iframe {
-    width: 300px;
-    height: 260px;
+    width: 370px;
+    height: 300px;
   }
   article {
     overflow-x: scroll;
@@ -625,6 +604,9 @@ textarea {
     padding: 2rem 1rem;
     margin-bottom: 1rem;
   }
+  .weatherPage {
+    margin: 1rem 2rem;
+  }
   .proceed-btn {
     padding: 10px;
     border-radius: 1rem;
@@ -635,40 +617,40 @@ textarea {
   }
 
   .contact-card {
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: black;
-    border-radius: 3rem;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 3rem;
     flex-shrink: 1;
   }
-  .contact-card h3 {
+  .contact-card-form {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .contact-card h2 {
     padding-bottom: 1rem;
     font-size: 2rem;
   }
+  .contact-card-text {
+    width: auto;
+  }
+
   .social-media-links-wrapper .bx {
-    font-size: 36px;
-    padding: 16px;
-  }
-  .contact-details .bx {
-    font-size: 30px;
-  }
-  .contact-details svg {
-    width: 30px;
-    /* height: 100px; */
-  }
-  .contact-card p {
-    font-size: 1.6rem;
+    font-size: 32px;
+    padding: 12px;
   }
   input,
-  textarea {
-    font-size: 1.2rem;
+  textarea,
+  .btn {
+    font-size: 24px;
     width: 100%;
   }
   form .btn {
-    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn p {
+    text-align: center;
+  }
+  .contact-card br {
+    display: none;
   }
 }

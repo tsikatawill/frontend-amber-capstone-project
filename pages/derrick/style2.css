@@ -107,8 +107,29 @@ body {
   display: none;
   overflow: hidden;
 }
+.icon {
+  font-size: 40px;
+  color: white;
+}
+.home-btn a {
+  width: fit-content;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.home-btn a :hover {
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+}
 
 @media screen and (max-width: 932px) {
+  .home-btn a {
+    left: 10px;
+  }
   .search-city input {
     width: 220px;
   }
