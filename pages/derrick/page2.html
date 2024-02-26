@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="../../pages/derrick/style2.css" />
+    <link
+      rel="icon"
+      type="image/ico"
+      sizes="32x32"
+      href="../../assets/derrick/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/derrick/css/boxicons.min.css" />
+  </head>
+  <body>
+    <div class="home-btn">
+      <a href="./page.html">
+        <i class="bx bx-arrow-back icon"></i>
+      </a>
+    </div>
+    <div class="container menu-bar animate__animated animate__fadeInDown">
+      <form class="search-city">
+        <input type="text" spellcheck="false" placeholder="enter city name" />
+        <button class="btn">
+          <img src="../../assets/derrick/search.png" />
+        </button>
+      </form>
+
+      <p class="error-msg"></p>
+
+      <div
+        class="weather-details menu-bar animate__animated animate__fadeInUp animate__delay-1s"
+      >
+        <h1 class="temperature"></h1>
+
+        <h1 class="city"></h1>
+        <div class="details">
+          <div class="wind-wrapper detail">
+            <p class="detail-name">Wind</p>
+            <p class="wind"></p>
+          </div>
+
+          <div class="humidity-wrapper detail">
+            <p class="detail-name">Humidity</p>
+            <p class="humidity"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../pages/derrick/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,656 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+.scroll {
+  width: 100%;
+  background-color: red;
+  height: 10px;
+  position: fixed;
+}
+.bar {
+  background-color: #fdfdfd;
+  height: 8px;
+  border-radius: 9px;
+  width: 0%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  background-color: #444343;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+
+.navlinks {
+  justify-content: space-between;
+  display: flex;
+  width: 500px;
+  align-items: center;
+  text-decoration: none;
+  padding: 14px 12px;
+  border-radius: 10px;
+}
+
+.navlinks li {
+  flex-shrink: 1;
+  list-style: none;
+  display: flex;
+  font-size: larger;
+}
+.navlinks li a {
+  border: solid 1px rgb(76, 97, 104);
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+.navlinks li a:hover {
+  background-color: coral;
+  transition: 0.4s ease-in-out;
+}
+
+.bgColor {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  color: white;
+  background-image: url(../../assets/derrick/hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+.myselfContainer {
+  padding: 170px 80px;
+  display: flex;
+}
+.myselfText {
+  padding-top: 1rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.myselfText p {
+  font-size: 1.7rem;
+}
+.myselfText h1 {
+  color: coral;
+  font-size: 60px;
+  font-family: gabarito;
+}
+.myself-heading {
+  padding-bottom: 1rem;
+}
+.myselfImage {
+  width: 40%;
+  padding-top: 4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.myselfImage img {
+  --s: 15px;
+  --b: 2px;
+  --w: 400px;
+  --c: #7b3b3b;
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2 * var(--s));
+  --_g: var(--c) var(--b), #0000 0 calc(100% - var(--b)), var(--c) 0;
+  background: linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+    linear-gradient(90deg, var(--_g)) 50% / var(--_i, 100%) 100% no-repeat;
+  outline: calc(var(--w) / 2) solid #0009;
+  outline-offset: calc(var(--w) / -2 - 2 * var(--s));
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s) / -2);
+  --_i: calc(100% - 2 * var(--s));
+}
+section {
+  padding: 5rem 3rem;
+  background-color: rgb(19, 15, 10);
+}
+.review-card {
+  color: white;
+  font-size: 1.7rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.review-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.review-text h1 {
+  color: coral;
+  font-size: 60px;
+  font-family: gabarito;
+  padding-bottom: 40px;
+}
+.review-text a {
+  text-decoration: underline;
+  color: rgb(126, 126, 192);
+}
+article {
+  padding: 8rem 3rem;
+  background-color: #110909;
+}
+.iframe-wrapper {
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid coral;
+  border-top: solid coral;
+  gap: 4rem;
+  padding: 6rem 2rem;
+}
+
+.weather-container {
+  background-color: #141010;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  padding: 6rem 0rem;
+}
+.weatherPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: solid coral;
+  border-right: solid coral;
+  padding: 3rem 5rem;
+  width: fit-content;
+}
+.proceed-btn {
+  text-align: center;
+  border: solid rgb(202, 95, 56);
+  padding: 1rem;
+  display: flex;
+  flex-shrink: 1;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  transition-duration: 0.4s;
+}
+.proceed-btn:hover {
+  background-color: rgb(202, 95, 56);
+}
+footer {
+  font-size: 1.7rem;
+  padding: 3rem 0rem;
+  color: white;
+  background-image: url(../../assets/derrick/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.contact-card {
+  display: flex;
+  flex-direction: column;
+}
+.contact-card h1 {
+  text-align: center;
+  color: coral;
+}
+.contact-card-text {
+  display: flex;
+  width: 60%;
+}
+.contact-card-form {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 4rem;
+}
+.social-media-links-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.social-media-links-wrapper .bx {
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 6px;
+  transition: 0.4s ease-in-out;
+  background-color: white;
+  color: black;
+}
+.social-media-links-wrapper .bx:hover {
+  background-color: black;
+  color: white;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+input {
+  padding: 0.5rem 0.4rem;
+  border-radius: 0.5rem;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  font-weight: 500;
+  width: 400px;
+  background: #ebfffc;
+}
+
+textarea {
+  resize: none;
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  font-size: 18px;
+  justify-content: end;
+  vertical-align: middle;
+}
+
+.btn {
+  width: 400px;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+.menu-card-wrapper {
+  display: none;
+}
+@media screen and (max-width: 670px) {
+  .navbar-mobile {
+    display: block;
+  }
+  .navbar {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  .navbar img {
+    width: 70px;
+    height: 30px;
+  }
+  .navlinks li {
+    padding: 0.2rem 0.5rem;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+  .navlinks {
+    justify-content: end;
+    gap: 1rem;
+    width: fit-content;
+  }
+
+  .bgColor {
+    display: none;
+  }
+  .navbar h1 {
+    font-size: 20px;
+  }
+  .myselfContainer {
+    flex-direction: column;
+    padding: 3rem 20px 7rem 20px;
+    gap: 4rem;
+  }
+  .myselfText p {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+  .myselfText h1 {
+    color: coral;
+    font-size: 2rem;
+  }
+  .myselfText h3 {
+    color: coral;
+    font-size: 1.5rem;
+  }
+
+  .myselfText {
+    width: 100%;
+  }
+
+  .myselfImage {
+    width: 100%;
+    padding: 1rem;
+  }
+  .myselfImage img {
+    height: 350px;
+  }
+  .review-card {
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 20px 7rem 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+  .review-text {
+    width: 100%;
+  }
+  .review-text h1 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    width: fit-content;
+  }
+  .review-image {
+    padding-top: 0;
+    height: 250px;
+    width: 250px;
+  }
+  .review-image img {
+    height: 350px;
+  }
+
+  .iframe-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    padding: 4rem 2rem;
+  }
+  iframe {
+    width: 300px;
+    height: 220px;
+  }
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  section {
+    padding: 60px 20px 60px 20px;
+    padding-bottom: 1rem;
+  }
+  footer {
+    padding-bottom: 9rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-container p {
+    font-size: 1rem;
+  }
+  .footer-container {
+    gap: 2rem;
+  }
+  .footer-container a {
+    font-size: 1rem;
+  }
+  .weatherPage {
+    display: flex;
+    font-size: 1rem;
+    margin: 4rem 1rem;
+    padding: 1.4rem;
+  }
+  .proceed-btn {
+    padding: 10px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-card h1 {
+    font-size: 2rem;
+  }
+  .contact-card-form {
+    font-size: 1rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .contact-card-text {
+    display: flex;
+    width: auto;
+  }
+  .conact-form {
+    padding: 1rem;
+  }
+  .contact-card-text br {
+    display: none;
+  }
+
+  input,
+  textarea,
+  .btn {
+    width: 100%;
+  }
+  .menu-bar {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 20px;
+    gap: 0.8rem;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 2rem;
+    background-color: rgb(4, 4, 4);
+    z-index: 1000;
+    align-items: center;
+  }
+  .menu-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+  }
+  .menu-bar-list {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 10px;
+  }
+  .menu-bar-list a {
+    display: flex;
+  }
+  .menu-bar .icon {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 6px;
+    transition: 0.4s;
+  }
+  .menu-bar .icon:hover {
+    color: black;
+    background-color: white;
+  }
+}
+
+@media (min-width: 671px) and (max-width: 991px) {
+  .side-nav {
+    display: none;
+  }
+  .myselfContainer {
+    flex-direction: column;
+    padding-top: 6rem;
+    padding: 8rem 20px 60px 20px;
+  }
+  .myselfText p {
+    font-size: 1.6rem;
+    padding: 0.3rem;
+  }
+  .myselfText h1 {
+    color: coral;
+    font-size: 4rem;
+  }
+  .myselfText h3 {
+    color: coral;
+    font-size: 2.6rem;
+  }
+  .myselfText {
+    width: 100%;
+  }
+  .myselfImage {
+    width: 100%;
+    padding: 1rem;
+  }
+  .review-card {
+    flex-direction: column;
+  }
+  .review-text {
+    width: 100%;
+  }
+  .review-text h1 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    width: fit-content;
+  }
+  .review-image {
+    padding-top: 3rem;
+    height: 400px;
+    width: 400px;
+  }
+  .review-image img {
+    width: 10px;
+    height: 10px;
+  }
+  .iframe-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+  }
+  iframe {
+    width: 370px;
+    height: 300px;
+  }
+  article {
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    padding: 60px 20px 60px 20px;
+  }
+  .review-card {
+    color: white;
+    font-size: 1.6rem;
+    padding: 0.3rem;
+    display: flex;
+  }
+  .footer-container p {
+    font-size: 1.6rem;
+  }
+  .footer-container a {
+    font-size: 1.6rem;
+  }
+  .weatherPage {
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .weatherPage {
+    margin: 1rem 2rem;
+  }
+  .proceed-btn {
+    padding: 10px;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-card {
+    flex-shrink: 1;
+  }
+  .contact-card-form {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .contact-card h2 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .contact-card-text {
+    width: auto;
+  }
+
+  .social-media-links-wrapper .bx {
+    font-size: 32px;
+    padding: 12px;
+  }
+  input,
+  textarea,
+  .btn {
+    font-size: 24px;
+    width: 100%;
+  }
+  form .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn p {
+    text-align: center;
+  }
+  .contact-card br {
+    display: none;
+  }
+}

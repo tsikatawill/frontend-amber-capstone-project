@@ -4,11 +4,223 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Derrick - Frontend Amber</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/ico"
+      sizes="32x32"
+      href="../../assets/derrick/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../../assets/derrick/css/boxicons.min.css" />
+    
   </head>
+  
   <body>
-    <h1>
-      Derrick is my name, and because I am a mama ba, Jollof rice if my
-      favourite food
-    </h1>
+    <script src="./script.js"></script>
+    <main>
+      <div class="navbar animate__animated animate__fadeInDown animate__delay-0s">
+        <a href="./page.html">
+          <img src="../../assets/derrick/logo.jpg" width="100px" height="40px" alt="">
+        </a>
+
+        <div class="navlinks">
+          <li>
+            <a  href="./page.html"> Home </a>
+          </li>
+          <li>
+            <a  href="#sec"> About </a>
+          </li>
+          <li>
+            <a  href="#contact-card"> Contact </a>
+          </li>
+        </div>
+      </div>
+     
+      <div class="myselfContainer">
+        <div class="myselfText ">
+          <span class=" animate__animated animate__fadeInLeft animate__delay-04s"> <h1 > Derrick Yeboah</h1></span>
+          <span class=" animate__animated animate__fadeInLeft animate__delay-1s " > <h1>Front-End Amber</h1></span>
+          <br />
+          <span class=" animate__animated animate__fadeInLeft animate__delay-2s ">
+           <p>
+            Hey there, I'm Derrick, a front-end student on a journey to explore
+            the world of web development. I'm learning the ropes of HTML, CSS,
+            and JavaScript, with a passion for creating user-friendly
+            interfaces. Join me as I navigate the exciting path of turning codes
+            into web reality. Let's code together!
+           </p>
+          </span>
+        </div>
+
+        <div class="myselfImage animate__animated animate__fadeInRight  animate__delay-2s ">
+          <img
+            src="../../assets/derrick/mejpg.jpg"
+            alt=""
+            width="350px"
+            height="450px"
+          />
+        </div>
+      </div>
+      </div>
+    </main>
+
+    <section id="sec">
+      <div class="review-card" >
+        <div class="review-text">
+          <h1>Slightly Techie?</h1>
+          <p>
+            Jumping into web development with absolutely no background, Slightly
+            Techie turned out to be the perfect starting point. The curriculum
+            took me from ground zero to understanding complex concepts, thanks
+            to <a href="https://github.com/tsikatawill">William</a>  who made it all feel less intimidating. Hands-on projects
+            made learning interactive, and the community vibe created a
+            supportive learning atmosphere. Now, starting from scratch, I've got
+            a solid grasp of web development and a genuine excitement for
+            coding. Hoping to meet greater minds and never stop learning.
+          </p>
+        </div>
+
+          <img
+            src="../../assets/derrick/ST.jpg"
+            alt=""
+            width="450px"
+            height="450px"
+            class="review-image"
+          />
+      </div>
+    </section>
+
+    <article>
+      <div class="iframe-wrapper">
+        <iframe
+          width="460"
+          height="315"
+          src="https://www.youtube.com/embed/RzkD_rTEBYs?si=SjG_Aw8jNF_kkzwn"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="460"
+          height="315"
+          src="https://www.youtube.com/embed/ukzFI9rgwfU?si=pD4stegTI7cXAEa6"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="460"
+          height="315"
+          src="https://www.youtube.com/embed/erEgovG9WBs?si=rgewsEPXlD1Y3sFj"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </article>
+
+    <aside class="weather-container">
+      <nav class="weatherPage">
+        <p>Checkout a live weather forecast page I created with api requests</p>
+        <a class="proceed-btn"  href="./page2.html">Proceed</a>
+      </nav>
+    </aside>
+    <footer>
+        <div class="contact-card" id="contact-card">
+          <h1>Contact me</h1>
+          <div class="contact-card-form">
+            <div class="contact-card-text">
+              <p>Have thoughts you would want to share? <br>
+                Send me a mail by filling the contact form <br>
+                or reach out to me via my social media links
+              </p> 
+             
+                 
+            </div>
+            <form
+              class="form contact-form"
+              action="https://api.web3forms.com/submit" method="POST">
+
+               <input type="hidden" name="access_key" value="8fc4a121-1a7a-466a-bea1-f982cc39976e">
+            
+                <input
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Name"
+                  type="text"
+                />
+              
+            
+                <input
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="Email"
+                  type="email"
+                />
+              
+              <textarea
+                name="comment"
+                id="comment"
+                cols=""
+                rows=""
+                placeholder="Message"
+              ></textarea>
+               <button class="btn" type="submit">Send</button>
+              
+              <div class="social-media-links-wrapper">
+                <a href="https://discord.com/firstnamederrick"><i class='bx bxl-discord-alt'></i></a> 
+                <a href="https://twitter.com/derrickkstories"><i class='bx bxl-twitter' ></i></a> 
+                <a href="https://github.com/derrickyebs"><i class='bx bxl-github'></i></a> 
+              </div>
+            </form>
+            
+          </div>
+        </div>
+      
+      <div class="menu-card-wrapper">
+        <div class="menu-bar animate__animated animate__fadeInUp animate__delay-3s">
+          <li class="menu-bar-list">
+            <a href="./page.html">
+               <i class="bx bxs-home icon"></i>
+            </a>
+         </li>
+         <li class="menu-bar-list">
+          <a href="#sec">
+            <i class='bx bxs-message-square-detail icon' ></i>
+          </a>
+         </li>
+         <li class="menu-bar-list">
+          <a href="./page2.html">
+            <i class='bx bxs-cloud-rain icon' ></i>
+          </a>
+         </li>
+         <li class="menu-bar-list">
+          <a href="#contact-card">
+            <i class='bx bxs-envelope icon'></i>
+          </a>
+         </li>
+        </div>
+      </div>
+      
+    </footer>
+    
   </body>
 </html>
